@@ -15,7 +15,7 @@ class DefLayout extends Component {
 }
 
 DefLayout.propTypes = {
-  children: PropTypes.elementType.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
 export default DefLayout;
