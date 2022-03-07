@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { createUser } from '../services/userAPI';
+// import { createUser } from '../services/userAPI';
 
 class Login extends Component {
   render() {
@@ -18,8 +18,8 @@ class Login extends Component {
             name="loginBtn"
             type="submit"
             data-testid="login-submit-button"
-            disabled={ }
-            onClick={ createUser({name: })}
+            // disabled={ }
+            // onClick={ }
           >
             Entrar
           </button>
