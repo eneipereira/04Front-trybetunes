@@ -53,6 +53,10 @@ class Search extends Component {
     }
   }
 
+  handleKeyDown = ({ key }) => {
+    if (key === 'Enter') this.handleClick();
+  }
+
   render() {
     const {
       search,
@@ -73,6 +77,7 @@ class Search extends Component {
               data-testid="search-artist-input"
               placeholder="Nome do Artista"
               onChange={ this.handleChange }
+              onKeyDown={ this.handleKeyDown }
               value={ search }
             />
             <button
