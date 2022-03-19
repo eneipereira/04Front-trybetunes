@@ -20,9 +20,16 @@ class CheckBox extends Component {
 }
 
 CheckBox.propTypes = {
-  trackId: PropTypes.number.isRequired,
   checked: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
+  trackId: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+};
+
+CheckBox.defaultProps = {
+  trackId: '',
 };
 
 export default CheckBox;
