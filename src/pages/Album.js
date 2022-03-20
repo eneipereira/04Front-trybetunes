@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import getMusics from '../services/musicsAPI';
 import { addSong, getFavoriteSongs, removeSong } from '../services/favoriteSongsAPI';
-import { Loading, MusicCard, CheckBox } from '../components';
+import { Loading, MusicCard, CheckBox } from '../components/index1';
 
 class Album extends Component {
   constructor() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { getUser } from '../services/userAPI';
-import { Loading } from '../components';
+import { Loading } from '../components/index1';
 
 class Profile extends Component {
   constructor() {
@@ -37,12 +37,14 @@ class Profile extends Component {
       <div data-testid="page-profile">
         {loading ? <Loading /> : (
           <div>
-            <img
-              data-testid="profile-image"
-              src={ image }
-              alt={ `Foto de perfil de: ${name}` }
-            />
-            <Link to="/profile/edit">Editar perfil</Link>
+            <div>
+              <img
+                data-testid="profile-image"
+                src={ image }
+                alt={ `Foto de perfil de: ${name}` }
+              />
+              <Link to="/profile/edit">Editar perfil</Link>
+            </div>
             <div>
               <h4>Nome:</h4>
               <p>{name}</p>

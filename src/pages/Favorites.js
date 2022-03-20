@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { getFavoriteSongs, removeSong } from '../services/favoriteSongsAPI';
-import { Loading, MusicCard, CheckBox } from '../components';
+import { Loading, MusicCard, CheckBox } from '../components/index1';
 
 class Favorites extends Component {
   constructor() {

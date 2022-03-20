@@ -18,11 +18,7 @@ class App extends React.Component {
           />
           <Route
             path="/profile/edit"
-            render={ (props) => (
-              <DefLayout>
-                <ProfileEdit { ...props } />
-              </DefLayout>
-            ) }
+            component={ ProfileEdit }
           />
           <Route
             path="/profile"
